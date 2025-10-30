@@ -359,15 +359,7 @@ if __name__ == "__main__":
     # Get current task information
     filename = sys.argv[1]
     seq_file_name = filename.rsplit(".",1)[0]
-    # cpu = int(seq_file_name.split('_')[-1])+1
-
-    print(f"Debug: sys.argv = {sys.argv}")
-    filename = sys.argv[1]
-    seq_file_name = filename.rsplit(".", 1)[0]
-    print(f"Debug: filename = {filename}, seq_file_name = {seq_file_name}")
-
-    # 原来的问题代码
-    cpu = int(seq_file_name.split('_')[-1]) + 1  # 这里会报错
+    cpu = int(seq_file_name.split('_')[-1])+1
     threads = sys.argv[2]
     threads_number = sys.argv[3]
 
@@ -504,4 +496,5 @@ if __name__ == "__main__":
 
 
     # PICI identification and classification pipeline
+
     subprocess.run('python3 '+PICI_finder_path+'/scripts/PICI_Identifier.py '+seq_file_name+' '+filepath+' '+str(threads), shell=True)
