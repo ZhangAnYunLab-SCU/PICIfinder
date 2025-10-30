@@ -36,5 +36,5 @@ Options:
 --help Show this message and exit.
 ```
 ### Example
-The sample files are available in `example_data`. Run them according to the following instructions.
+The sample files are available in `example_data`. Run them according to the following instructions.<br/>
 `python PICIfinder.py -i SaPI1.fasta -l 3000 -t 1 -o outpath/SaPI1`
